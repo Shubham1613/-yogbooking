@@ -1,11 +1,12 @@
-
 from django.contrib import admin
 from django.urls import path,include
-from yogbookingapp import views
+from . import views
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.index,name='index'),
-    path('yogbookingapp/',include('yogbookingapp.url'),name='yogbookingapp'),
+    path('services',views.services,name = 'services'),
+    path('events',views.events,name = 'events'),
+
 ]
