@@ -1,12 +1,85 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
+{% extends 'yogbookingapp/master.html' %}
+{% load static %}
+{% block content %}
+<div id="index-banner" class="parallax-container">
+  <div class="section no-pad-bot">
     <div class="container">
-      yogbookingapp
+      <br><br>
+      <h1 class="header center teal-text text-lighten-2">Yog Booking</h1>
+      <div class="row center">
+        <h5 class="header col s12 light">Book your Yog Instructor...</h5>
+      </div>
+      <div class="row center">
+        <a href="about.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
+      </div>
+      <br><br>
+
     </div>
-  </body>
-</html>
+  </div>
+  <div class="parallax"><img src="{% static 'images/image.jpeg' %}" alt="Unsplashed background img 1"></div>
+</div>
+
+
+<div class="container">
+  <div class="section">
+
+    <!--   Icon Section   -->
+    <div class="row">
+      <div class="col s12 m5">
+        <div class="card-panel teal">
+          <span class="white-text">I am a very simple card. I am good at containing small bits of information.
+          I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+          </span>
+        </div>
+      </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+
+<div class="parallax-container valign-wrapper">
+  <div class="section no-pad-bot">
+    <div class="container">
+      <div class="row center">
+        <h5 class="header col s12 light">love to Write code..</h5>
+      </div>
+    </div>
+  </div>
+  <div class="parallax"><img src="{% static 'images/background2.jpg' %}" alt="Unsplashed background img 2"></div>
+</div>
+
+<div class="container">
+  <div class="section">
+
+    <div class="row">
+      <div class="col s12 center">
+        <h3><i class="mdi-content-send brown-text"></i></h3>
+        <h4>Contact Us</h4>
+        <p class="left-align light">
+          Hi, I'm Gourav Sharma. I'm a Full Stack Developer.develop Web APP and I'm from Muzaffarnagar UP 251001.
+          recently I complete Bachelor of Technology from Shri Ram Group of College Muzaffarnagar with 76%.
+
+          </div>
+    </div>
+
+  </div>
+</div>
+
+
+<div class="parallax-container valign-wrapper">
+  <div class="section no-pad-bot">
+    <div class="container">
+      <div class="row center">
+        <h5 class="header col s12 light">
+          Innocent Engineer
+          </div>
+    </div>
+  </div>
+  <div class="parallax"><img src="{% static 'images/download.jpeg' %}" alt="Unsplashed background img 3"></div>
+</div>
+
+
+{% endblock %}
