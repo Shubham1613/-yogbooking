@@ -5,6 +5,9 @@
     <title></title>
   </head>
   <body>
-    services page
+    {% for i in services %}
+    <h2>{{i.name}}</h2>
+    <h3>{{i.description}}</h3>
+    {% endfor %}
   </body>
 </html>
