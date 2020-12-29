@@ -5,11 +5,54 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>YogBooking.com</title>
-
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="{% static 'css/materialize.css' %}" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="{% static 'css/style.css' %}" type="text/css" rel="stylesheet" media="screen,projection"/>
+<style media="screen">
+.footer-design{
+  position: absolute;
+  width: 100%;
+  height: auto;
+  background: #63786E;
+
+
+}
+*{
+  font-family: 'Raleway', sans-serif;
+}
+.menu{
+  position: relative;
+  width: 100%;
+  left: 20%;
+  background: transparent;
+  height: 50px;
+}
+.white-text li{
+  color: white;
+  font-weight: bold;
+  padding: 0px;
+  float: left;
+
+}
+.drop li{
+  font-size: 20px;
+  color: red;
+}
+.footer-copyright{
+  width: 100%;
+  position: relative;
+  top:20px;
+  height: 40px;
+  background: #009688;
+}
+li{
+  float: left;
+  padding: 10px;
+}
+</style>
 </head>
 <body>
   <nav class="white" role="navigation">
@@ -39,38 +82,57 @@
   {% block content %}
 
   {% endblock %}
-  <footer class="page-footer teal">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">GouravBlog</h5>
-          <p class="grey-text text-lighten-4"></p>
-
-
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
-          <ul>
-            <li><a class="white-text" href="{% url 'index' %}">Home</a></li>
-            <li><a class="white-text" href="#!">About</a></li>
-            <li><a class="white-text" href="#!">Gellery</a></li>
-            <li><a class="white-text" href="#!">Contact us</a></li>
-          </ul>
-        </div>
+<footer class="footer-design">
+  <div class="container-flued">
+    <div class="row">
+      <div class="col">
+        <h4>YogBooking.com</h2>
 
       </div>
+  <div class="col">
+    <div class="menu">
+      <ul>
+      <li><a class="white-text" href="#"><b>Home</b></a></li>
+      <li class='drop white-text'>Service</a></li>
+      <li><a class="white-text" href="{% url 'events' %}">Event</a></li>
+      <li><a class="white-text" href="#">Apply</a></li>
+      <li><a class="white-text" href="admin.html">About</a></li>
+      <li><a class="white-text" href="admin.html">Contact</a></li>
+    </ul>
+
     </div>
-    <div class="footer-copyright">
-      <div class="container">
+
+  </div>
+    </div>
+    <div class="row">
+      <div class="footer-copyright">
 
       </div>
+
     </div>
-  </footer>
+
+  </div>
+</footer>
 
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="{% static 'js/materialize.js' %}"></script>
   <script src="{% static 'js/init.js' %}"></script>
+<script type="text/javascript">
 
-  </body>
+document.addEventListener('DOMContentLoaded', function() {
+  var elems = document.querySelectorAll('.dropdown-trigger');
+  var instances = M.Dropdown.init(elems, options);
+});
+
+// Or with jQuery
+
+$('.dropdown-trigger').dropdown();
+ instance.open();
+ instance.close();
+ instance.recalculateDimensions();
+ instance.destroy();
+
+</script>
+</body>
 </html>

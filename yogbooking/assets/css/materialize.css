@@ -980,7 +980,9 @@
 }
 
 .teal {
-  background-color: #009688 !important;
+  background-color: #{
+
+    }009688 !important;
 }
 
 .teal-text {
@@ -2947,25 +2949,6 @@ ul.staggered-list li {
   background-color: #ee6e73;
 }
 
-.page-footer .footer-copyright {
-  overflow: hidden;
-  min-height: 50px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 10px 0px;
-  color: rgba(255, 255, 255, 0.8);
-  background-color: rgba(51, 51, 51, 0.08);
-}
 
 table, th, td {
   border: none;
@@ -5544,7 +5527,7 @@ button.btn-floating {
   background-color: #fff;
   margin: 0;
   display: none;
-  min-width: 100px;
+  min-width: 100%;
   overflow-y: auto;
   opacity: 0;
   position: absolute;
@@ -5586,8 +5569,9 @@ button.btn-floating {
   font-size: 16px;
   color: #26a69a;
   display: block;
-  line-height: 22px;
+  line-height: 10px;
   padding: 14px 16px;
+
 }
 
 .dropdown-content li > span > label {
@@ -5612,12 +5596,14 @@ body.keyboard-focused .dropdown-content li:focus {
   top: 1px;
   left: 0;
   height: 18px;
+
   -webkit-transform: none;
           transform: none;
 }
 
 .dropdown-trigger {
   cursor: pointer;
+
 }
 
 /*!
