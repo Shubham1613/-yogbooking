@@ -6,6 +6,8 @@ admin.site.register(models.User)
 admin.site.register(models.Instructor)
 admin.site.register(models.Blog)
 admin.site.register(models.Events)
+admin.site.register(models.Upcommingevent)
+
 
 
 

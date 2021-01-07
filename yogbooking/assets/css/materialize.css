@@ -5548,7 +5548,7 @@ button.btn-floating {
   cursor: pointer;
   min-height: 50px;
   line-height: 1.5rem;
-  width: 100%;
+  width: 120%;
   text-align: left;
 }
 
@@ -5560,10 +5560,7 @@ button.btn-floating {
   outline: none;
 }
 
-.dropdown-content li.divider {
-  min-height: 0;
-  height: 1px;
-}
+
 
 .dropdown-content li > a, .dropdown-content li > span {
   font-size: 16px;
